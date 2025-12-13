@@ -1,0 +1,127 @@
+/* fonts */
+@font-face {
+    font-family: 'mountains of christmas';
+    src: url('./MountainsofChristmas-Regular.ttf');
+}
+@font-face {
+    font-family: 'mountains of bold';
+    src: url('./MountainsofChristmas-Bold.ttf');
+}
+@font-face {
+    font-family: 'berkshire swash';
+    src: url('./BerkshireSwash-Regular.ttf');
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'berkshire swash';
+    font-weight: normal;
+}
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+p { 
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+/* general */
+html, body { 
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+#pages {
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.page {
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    height: 100vh; 
+    padding: 25px 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+ 
+
+.page:nth-child(7) { background-color: blueviolet; }
+.page:nth-child(8) { background-color: blueviolet; }
+.page:nth-child(9) { background-color: azure; }
+.page:nth-child(10) { background-color: blanchedalmond; } 
+
+
+
+/* cover */
+#cover { 
+    background-image: url('./source.gif'); 
+    background-size: cover;
+    background-position: center; 
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+#cover h1 { font-size: 7.5rem; }
+#cover_sub { 
+    font-size: 3rem;
+    font-family: 'mountains of christmas'; 
+    margin: 0;
+}
+
+
+/* earth */
+#earth, #sun {  
+    background-color: black;
+    flex-direction: row;
+    gap: 100px;
+}
+#earth .txt_box, #sun .txt_box, #earth_orbit_sun, #sunlight .txt_box { color: white; }
+#earth img { width: 512px; }
+
+
+/* sun */
+#sun img { width: 650px; min-width: 650px; }
+
+
+/* earth orbit sun */
+#earth_orbit_sun, #sunlight { background-color: black; }
+#earth_orbit_sun img { width: 750px; }
+
+
+/* tilt */
+#tilt .txt_box { text-align: center; }
+#tilt { background-color: white; }
+#tilt img { width: 900px; }
+
+
+/* sunlight */
+#sunlight .txt_box { text-align: center; }
+#sunlight img { width: 800px; margin-top: 25px; }
+
+
+/* explanation 1*/
+#explain2 { 
+    background-image: url('./winter.gif'); 
+    background-size: cover; 
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* conclusion */
+#cns_btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
