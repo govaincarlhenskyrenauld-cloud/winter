@@ -72,7 +72,7 @@ body {
     color: white;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-#cover h1 { font-size: 7.5rem; }
+#cover h1 { font-size: 7.5rem; text-align: center; }
 #cover_sub { 
     font-size: 3rem;
     font-family: 'mountains of christmas'; 
@@ -87,7 +87,7 @@ body {
     gap: 100px;
 }
 #earth .txt_box, #sun .txt_box, #earth_orbit_sun, #sunlight .txt_box { color: white; }
-#earth img { width: 512px; }
+#earth img { width: 512px; max-width: 100%; }
 
 
 /* sun */
@@ -124,4 +124,67 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+
+/*  giant screen styling  */
+@media ( min-width: 1601px ) {   
+}
+
+
+/*  big tablet styling  */
+@media ( max-width: 1080px ) { 
+    .page { padding: 25px; }
+
+    img { max-width: 100%; }
+
+    #earth, #sun { 
+        gap: 50px;
+        text-align: center;  
+    }
+
+    /* earth */
+    #earth {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    /* sun */
+    #sun {
+        flex-direction: column-reverse;
+    }
+    #sun img {
+        min-width: 0px;
+        max-width: 100%;
+    }
+}
+
+
+/*  regular tablet styling  */
+@media ( max-width: 850px ) { 
+}
+
+
+/*  small tablet styling  */
+@media ( max-width: 775px ) { 
+}
+
+
+/*  smaller tablet styling  */
+@media ( max-width: 700px ) {  
+}
+
+
+/*  big phone styling  */
+@media ( max-width: 450px ) {     
+}
+
+
+/*  regular phone styling  */
+@media ( max-width: 400px ) {  
+}
+
+
+/* narrow phone styling */
+@media ( max-width: 380px ) { 
 }
